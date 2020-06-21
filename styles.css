@@ -27,14 +27,14 @@ body {
   border: 10px solid black;
   
   border-radius: 30%;
-  z-index: -1;
+
 }
 
 .game-over {
 background-image:linear-gradient(to left, rgba(255, 255, 0, 0.747),rgba(255, 0, 0, 0.925) ,rgba(255, 255, 0, 0.747));
 font-family: 'Press Start 2P', cursive;
-width: 50%;
-margin: 20% auto;
+width:70%;
+margin:20% auto;
 
   
 }
