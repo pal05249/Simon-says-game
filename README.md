@@ -1,2 +1,2 @@
 # Simon-says-game
-Simon says game - miniproject
+Simon says game - miniproject #100dayswebprojects
