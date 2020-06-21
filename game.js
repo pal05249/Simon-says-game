@@ -72,6 +72,11 @@ function nextSequence()
 
 
     
-function animatePress(currentColour){   $("#"+currentColour).addClass("pressed").delay(100).removeClass("pressed");}
+function animatePress(currentColor) {
+  $("#" + currentColor).addClass("pressed");
+  setTimeout(function () {
+    $("#" + currentColor).removeClass("pressed");
+  }, 100);
+}
 
 function playSound(name) { var audio=new Audio("sounds/"+name+".mp3"); audio.play();}
