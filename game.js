@@ -8,7 +8,7 @@ var level=0;
 var started=false;
 
 
-$(document).keypress(function()
+$(document).click(function()
 {         $("body").removeClass("game-over"); 
           $(".btn").show();
         if(!started)
@@ -42,7 +42,7 @@ if(gamePattern[currentLevel]===userClickedPattern[currentLevel])
         }, 1000);
 }}
 else {  playSound("wrong");
-        $("h1").html("<h3><span>Game Over☠️</span>,  Press any key to restart</h3>");
+        $("h1").html("<h3><span>Game Over☠️</span>,  Click anywhere to restart</h3>");
         $("body").addClass("game-over");
         /*setTimeout(() => {
                 $("body").removeClass("game-over");      
