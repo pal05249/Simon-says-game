@@ -8,9 +8,9 @@ var level=0;
 var started=false;
 
 
-$(document).keydown(function()
+$(span).click(function()
 {         $("body").removeClass("game-over"); 
-          $(".btn").show();
+          
         if(!started)
         {       $("#level-title").text("Level "+level); 
                 nextSequence();
@@ -42,15 +42,13 @@ if(gamePattern[currentLevel]===userClickedPattern[currentLevel])
         }, 1000);
 }}
 else {  playSound("wrong");
-        $("h1").html("<h3><span>Game Over☠️</span>,  press anykey to restart</h3>");
+        $("h1").html("<h3><span>Game Over☠️</span>,  Refresh to restart</h3>");
         $("body").addClass("game-over");
-        /*setTimeout(() => {
-                $("body").removeClass("game-over");      
-        }, 200); */
+        
         level=0;
         started=false;
         gamePattern=[];
-        $(".btn").hide();
+        
         
 }
 
