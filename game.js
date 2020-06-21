@@ -10,7 +10,7 @@ var started=false;
 
 $("span").click(function()
 {         $("body").removeClass("game-over"); 
-          
+          $(".btn").show();
         if(!started)
         {       $("#level-title").text("Level "+level); 
                 nextSequence();
@@ -44,7 +44,7 @@ if(gamePattern[currentLevel]===userClickedPattern[currentLevel])
 else {  playSound("wrong");
         $("h1").html("<h3><span>Game Over☠️</span>,  Refresh to restart</h3>");
         $("body").addClass("game-over");
-        
+        $(".btn").hide();
         level=0;
         started=false;
         gamePattern=[];
@@ -71,12 +71,12 @@ function nextSequence()
 }
 
 
-    
 function animatePress(currentColor) {
-  $("#" + currentColor).addClass("pressed");
-  setTimeout(function () {
-    $("#" + currentColor).removeClass("pressed");
-  }, 100);
-}
+        $("#" + currentColor).addClass("pressed");
+        setTimeout(function () {
+          $("#" + currentColor).removeClass("pressed");
+        }, 100);
+      }
 
 function playSound(name) { var audio=new Audio("sounds/"+name+".mp3"); audio.play();}
+
