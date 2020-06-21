@@ -8,7 +8,7 @@ var level=0;
 var started=false;
 
 
-$(span).click(function()
+$("span").click(function()
 {         $("body").removeClass("game-over"); 
           
         if(!started)
