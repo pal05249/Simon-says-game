@@ -26,7 +26,7 @@ $(".btn").click(function () {
 });
 
 function checkAnswer(currentLevel) {
-  if (currentLevel == "0") return $("h1").html("<h3><span>Game Cleared.</span>Reward-treasure.intellogic@gmail.com . Go back to headquarters.</h3>");
+  if (currentLevel == "1") return $("h1").html("<h3><span>Game Cleared.</span>Reward-treasure.intellogic@gmail.com . Go back to headquarters.</h3>");
 
   if (gamePattern[currentLevel] === userClickedPattern[currentLevel]) {
     console.log("Success");
